@@ -172,13 +172,10 @@ struct BackgroundStruct {
 ```
 
 ### 2. 修改`Background`结构体
-在`Background`结构体中添加成员用于存储背景音乐相关信息。可以添加一个`Mix_Music *music`指针成员，用于指向加载的背景音乐。修改后的结构体定义如下：
+在`Background`结构体中添加成员用于存储背景音乐相关信息。可以添加一个`Mix_Music *music`指针成员，用于指向加载的背景音乐。
 
 ```c
 typedef struct {
-    SDL_Rect Dest;
-    int SpeedMultiplier;
-    SDL_Texture *Text;
     Mix_Music *music; 
 }Background;
 ```
